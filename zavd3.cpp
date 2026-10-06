@@ -6,7 +6,6 @@ using namespace std;
 int main() {
     forward_list<string> tech = { "HTML", "CSS", "JavaScript", "React", "PHP" };
     string searchElement = "React";
-    
     auto it = tech.begin();
     while (it != tech.end()) {
         if (*it == searchElement) {
@@ -14,12 +13,11 @@ int main() {
         }
         ++it;
     }
-    
     if (it != tech.end()) {
         cout << "Елемент знайдено";
-    } else {
+    } 
+    else {
         cout << "Елемент не знайдено";
     }
-    
     return 0;
 }
